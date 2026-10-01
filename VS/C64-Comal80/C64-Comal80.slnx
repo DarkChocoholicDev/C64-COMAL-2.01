@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Files/" />
+  <Project Path="C64-Comal80/C64-Comal80.vcxproj" />
+</Solution>

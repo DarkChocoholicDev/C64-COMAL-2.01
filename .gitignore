@@ -1,0 +1,5 @@
+.vs/
+*.user
+*.suo
+/VS/C64-Comal80/C64-Comal80/x64
+/VS/C64-Comal80/C64-Comal80/build
