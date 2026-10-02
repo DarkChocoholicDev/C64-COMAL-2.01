@@ -1,5 +1,8 @@
 
 !source "code/c64symb.asm"
+!source "code/common_defs.asm"
+!source "code/ed_ext_api.asm"
+
 VER_NEW = 1
 VER_OLD = 0
 

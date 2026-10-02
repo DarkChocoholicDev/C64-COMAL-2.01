@@ -43,5 +43,17 @@
     <None Include="..\..\..\code\p4_main.asm">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="..\..\..\code\p5_main.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\code\comal_ext_Com.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\code\ed_ext_api.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\code\common_defs.asm">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

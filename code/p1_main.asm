@@ -6563,93 +6563,94 @@ LAA7C
 ; Showkeys
 ;
 Showkeys
-    LDA $31
-    PHA
-    LDA $32
-    PHA
-    LDA $33
-    PHA
-    LDY #$00
-LAA8A
-    LDA $C660,Y
-    STA $C000,Y
-    DEY
-    BNE LAA8A
-    LDA $C7DD
-    BEQ LAA9D
-    LDX #$FF
-    JSR $CDDF
-LAA9D
-    STY $3B
-    LDA $C855,Y
-    STA $38
-    JSR P1_A612
-    LDY #$07
-LAAA9
-    LDA LAB1A-1,Y
-    JSR $CE05
-    DEY
-    BNE LAAA9
-    LDA $3B
-    CMP #$08
-    BCC LAABD
-    LDA #$31
-    JSR $CE05
-LAABD
-    LDA $3B
-    AND #$07
-    CLC
-    ADC #$31
-    JSR $CE05
-    STY $89
-    STY $33
-LAACB
-    CPY $38
-    BCS LAAD8
-    JSR $CB66
-    STA $C5E8,Y
-    INY
-    BNE LAACB
-LAAD8
-    LDX #$E8
-    LDA #$C5
-    STX $31
-    STA $32
-    JSR $CAEE
-    !by PAGE2
-    !word P2_BC2B
-
-    LDA #$2C
-    JSR P1_92ED
-    LDA #$29
-    JSR $CE05
-    LDA $C7DD
-    BNE LAAF8
-    JSR P1_96E6
-LAAF8
-    JSR $CDF4
-    LDY $3B
-    INY
-    CPY #$10
-    BCC LAA9D
-    JSR $CDD6
-    LDY #$00
-LAB07
-    LDA $C000,Y
-    STA $C660,Y
-    DEY
-    BNE LAB07
-    PLA
-    STA $33
-    PLA
-    STA $32
-    PLA
-    STA $31
-    RTS
----------------------------------
-LAB1A
-    !pet "(yekfed" ; "defkey("
-
+    +BankJump PAGE5, P5_API_ShowKeys
+;    LDA $31
+;    PHA
+;    LDA $32
+;    PHA
+;    LDA $33
+;    PHA
+;    LDY #$00
+;LAA8A
+;    LDA $C660,Y
+;    STA $C000,Y
+;    DEY
+;    BNE LAA8A
+;    LDA $C7DD
+;    BEQ LAA9D
+;    LDX #$FF
+;    JSR $CDDF
+;LAA9D
+;    STY $3B
+;    LDA $C855,Y
+;    STA $38
+;    JSR P1_A612
+;    LDY #$07
+;LAAA9
+;    LDA LAB1A-1,Y
+;    JSR $CE05
+;    DEY
+;    BNE LAAA9
+;    LDA $3B
+;    CMP #$08
+;    BCC LAABD
+;    LDA #$31
+;    JSR $CE05
+;LAABD
+;    LDA $3B
+;    AND #$07
+;    CLC
+;    ADC #$31
+;    JSR $CE05
+;    STY $89
+;    STY $33
+;LAACB
+;    CPY $38
+;    BCS LAAD8
+;    JSR $CB66
+;    STA $C5E8,Y
+;    INY
+;    BNE LAACB
+;LAAD8
+;    LDX #$E8
+;    LDA #$C5
+;    STX $31
+;    STA $32
+;    JSR $CAEE
+;    !by PAGE2
+;    !word P2_BC2B
+;
+;    LDA #$2C
+;    JSR P1_92ED
+;    LDA #$29
+;    JSR $CE05
+;    LDA $C7DD
+;    BNE LAAF8
+;    JSR P1_96E6
+;LAAF8
+;    JSR $CDF4
+;    LDY $3B
+;    INY
+;    CPY #$10
+;    BCC LAA9D
+;    JSR $CDD6
+;    LDY #$00
+;LAB07
+;    LDA $C000,Y
+;    STA $C660,Y
+;    DEY
+;    BNE LAB07
+;    PLA
+;    STA $33
+;    PLA
+;    STA $32
+;    PLA
+;    STA $31
+;    RTS
+;---------------------------------
+;LAB1A
+;    !pet "(yekfed" ; "defkey("
+;
 
 ;
 ; Bell

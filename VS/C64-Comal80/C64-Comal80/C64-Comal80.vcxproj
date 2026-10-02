@@ -112,14 +112,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\..\..\code\c64symb.asm" />
+    <None Include="..\..\..\code\comal_ext_Com.asm" />
     <None Include="..\..\..\code\comal_main_ApS.asm" />
     <None Include="..\..\..\code\comal_main_Com.asm" />
+    <None Include="..\..\..\code\common_defs.asm" />
+    <None Include="..\..\..\code\ed_ext_api.asm" />
     <None Include="..\..\..\code\p1_err_dansk.asm" />
     <None Include="..\..\..\code\p1_err_english.asm" />
     <None Include="..\..\..\code\p1_main.asm" />
     <None Include="..\..\..\code\p2_main.asm" />
     <None Include="..\..\..\code\p3_main.asm" />
     <None Include="..\..\..\code\p4_main.asm" />
+    <None Include="..\..\..\code\p5_main.asm" />
     <None Include="Makefile" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

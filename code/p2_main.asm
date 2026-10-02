@@ -4061,7 +4061,7 @@ P2_A2A4
     RTS
 ---------------------------------
 !if VER_NEW = 1 {
-.lA31F    !pet $0D," $$$ Commodore-64 COMAL 80 rev 2.01 $$$",$0D
+.lA31F    !pet $0D," $$ Commodore-64 COMAL 80 rev 2.01-K $$",$0D
          !pet $0D,"    (C) 1984 by UniComal & Commodore ",$0D
          !pet $0D,"           "
 .lA37B    !by $00,$02,$00,$4C,$09,$80
